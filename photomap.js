@@ -14,14 +14,14 @@
  */
 function createPhotoMap () {
   // URL of a Google Sheets spreadsheet output as CSV
-  var csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSuESp280YE8_PokNYJSK_V3zxGh7ZJlDqMNeliCoz1kt6q2ii7lRovZ-yMlEFY2n6rhUu3vOpnvFGx/pub?gid=0&single=true&output=csv';
+  var csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT_ND3aOcfbSrKaj5Hyiob7hjrrAvAJMc656KFX20gvtEe-I8sHcjvVsaiH8cEyzuoRMceQH-Ymm9KE/pub?output=csv';
   
   // create map object with center lat/lon and zoom level
-  var map = L.map('map').setView([30.44, -91.187], 13);
+  var map = L.map('map').setView([30.39229, -91.10861], 13);
   
   // create basemap object. See examples at https://leaflet-extras.github.io/leaflet-providers/preview/
   var basemap = L.tileLayer('https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/{z}/{y}/{x}', {
-  	maxZoom: 16,
+  	maxZoom: 13,
   	attribution: 'USGS'
   }).addTo(map);
   
